@@ -1,1 +1,33 @@
-hello
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Modified PDF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="pdfForm">
+        <label for="newDate">Date of Visit:</label>
+        <input type="date" id="newDate" placeholder="27/02/2024" required>
+
+        <label for="newCabine">Boarding Number (Cabine):</label>
+        <input type="text" id="newCabine" placeholder="30" required>
+
+        <label for="newTime">Boarding Time:</label>
+        <input type="text" id="newTime" placeholder="09:50" required>
+
+        <label for="newName">Passenger Name:</label>
+        <input type="text" id="newName" placeholder="Name" required>
+
+        <label for="newTicket">Ticket Number:</label>
+        <input type="text" id="newTicket" placeholder="J127AC35-RWJ-ZFL">
+
+        <label for="newOrder">Order Number:</label>
+        <input type="text" id="newOrder" placeholder="217216867">
+
+        <button type="submit">Create PDF</button>
+    </form>
+
+    <script src="https://unpkg.com/pdf-lib@^1.16.0/dist/pdf-lib.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
