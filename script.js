@@ -1,3 +1,19 @@
+    // Prompt the user for the access code when the page loads
+    window.onload = function() {
+        var accessCode = prompt("Please enter your access code to proceed. Contact the owner to get your code.");
+
+        // The hardcoded access code
+        var validCode = "1234"; // Change this to your preferred code
+
+        if (accessCode === validCode) {
+            // Correct code, display the form
+            document.getElementById("pdfForm").style.display = "block";
+        } else {
+            // Incorrect code, inform the user
+            alert("Incorrect code. Please contact the owner to get a valid access code.");
+        }
+    };
+
 document.getElementById('pdfForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
     modifyPdf();
