@@ -67,3 +67,30 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+/* Donation Section Styling */
+#donationSection {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#donationSection h2 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+#donationSection p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#donationSection strong {
+    font-weight: bold;
+    color: #000;
+}
